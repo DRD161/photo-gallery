@@ -2,12 +2,22 @@
 	box-sizing: border-box;
 }
 
-body {
-	margin: 0;
-	padding: 0;
-}
-
 .navbar-default {
 	background: #ffffff;
 	border: none;
+}
+
+.navbar-toggle {
+	border: none;
+	cursor: pointer;
+}
+
+.header-section {
+	font-size:22px;
+	padding-top: 100px;
+}
+
+
+.item {
+	height: 400px;
 }

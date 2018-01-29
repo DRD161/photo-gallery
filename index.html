@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Photo Gallery</title>
+    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display+SC" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,9 +18,9 @@
         <div class="container">
             <div class="navbar-header">
                 <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
                 </div>
                 <a class="navbar-brand top" href="#">
                 <img id="logo" src="assets/logo.svg" alt="d logo">
@@ -25,16 +29,14 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">About</a>
+                        <a class="nav-items" href="http://www.dylandavenport.com">Home</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a class="nav-items" href="#portfolio">Portfolio</a>
                     </li>
+                    
                     <li>
-                        <a href="#credits">Credits</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
+                        <a class="nav-items" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -44,14 +46,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
-                    <p class="quote"> Photography is an art of observation. It’s about finding something interesting in an ordinary place. It has little to do with the things you seebr   and everything to do with the way you see them. <span id="quote-author"><br>-Elliott Erwitt-</span></p>
+                    <p class="quote"> Photography is an art of observation. It’s about finding something interesting in an ordinary place. It has little to do with the things you see and everything to do with the way you see them. <span id="quote-author"><br>-Elliott Erwitt-</span></p>
                 </div>
             </div>
     </section>
     <section class="image-slider">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row no-gutter">
+                <div class="col-lg-12 no-padding">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -73,10 +75,88 @@
                 </div>
             </div>
     </section>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 big-letter ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptate aut dignissimos iusto, perferendis corrupti deserunt. Cum, distinctio atque iusto, voluptatum illum fugiat asperiores dignissimos harum incidunt nam! Ad, dolorum. In elit laborum in non enim aliqua non in aliquip ad ex tempor consequat in aliqua ad dolor do ullamco pariatur ad est velit incididunt sint</p>
+                    <br>
+                    <p>cillum esse in officia reprehenderit labore est in mollit excepteur consequat fugiat enim ea deserunt elit ea qui nisi duis voluptate irure tempor minim veniam irure in ea proident dolor pariatur officia eu ex ut consectetur amet mollit</p>
+                    <br>
+                </div>
+                <div class="col-md-6 right-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptate aut dignissimos iusto, perferendis corrupti deserunt. Cum, distinctio atque iusto, voluptatum illum fugiat asperiores dignissimos harum incidunt nam! Ad, dolorum. In elit laborum in non enim aliqua non in aliquip ad ex tempor consequat in aliqua ad dolor do ullamco pariatur ad est</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 img-responsive">
+                    <div class="hovereffect">
+                        <div class="col-md-12 photo-1"></div>
+                        <a href="#mybox">
+                            <div class="overlay">
+                                <h2>John Reign Abarintos</h2>
+                                <p>A star trail sequence of two hours</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 img-responsive">
+                    <div class="hovereffect">
+                        <div class="col-md-12 photo-2"></div>
+                        <a href="#mybox">
+                            <div class="overlay">
+                                <h2>Alexandre St-Lous</h2>
+                                <p>Behind his back</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 img-responsive">
+                    <div class="hovereffect">
+                        <div class="col-md-12 photo-3"></div>
+                        <a href="#mybox">
+                            <div class="overlay">
+                                <h2>Sebastian Unrau</h2>
+                                <p>The forest</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 img-responsive">
+                    <div class="hovereffect">
+                        <div class="col-md-12 photo-4"></div>
+                        <a href="#mybox">
+                            <div class="overlay">
+                                <h2>Mark Basarab</h2>
+                                <p>Star Night Sky Ravine</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="navbar-default navbar-static-bottom"  id="contact" >
+        <div class="container-fluid">
+            <p>Coded by: Dylan Davenport 2018</p> <br>
+            <a href="http://www.dylandavenport.com">www.dylandavenport.com</a>
+        </div>
+    </footer>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/scroll.js"></script>
 </body>
 
 </html>
